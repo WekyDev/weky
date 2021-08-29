@@ -91,7 +91,7 @@ module.exports = async (client, message) => {
 				try {
 					const fetched = await fetch(`https://api.affiliateplus.xyz/api/chatbot?message=${encodeURIComponent(message.content)}&botname=${encodeURIComponent('Weky')}&ownername=${encodeURIComponent('Face')}&user=${encodeURIComponent(message.author.id)}`, {});
 					const response = await fetched.json();
-					message.reply(response.message);
+					message.reply(Discord.Util.removeMentions(response.message));
 				}
 				catch (e) {
 					message.reply({ content: 'Something went wrong while fetching...' });
