@@ -4,7 +4,8 @@
   "description": "You can contribute to [Weky](https://discord.com/api/oauth2/authorize?client_id=809496186905165834&permissions=261188086870&scope=applications.commands%20bot) by creating [Pull Requests](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#:~:text=Pull%20requests%20let%20you%20tell,merged%20into%20the%20base%20branch.)!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write ."
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,7 @@
     "libsodium-wrappers": "^0.7.9",
     "mongoose": "^5.13.7",
     "node-gyp": "^8.1.0",
+    "prettier": "^2.3.2",
     "pretty-ms": "^7.0.1",
     "top.gg-core": "^1.0.0-b"
   }
